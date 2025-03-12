@@ -1,0 +1,15 @@
+def main():
+    numbers = []
+    list = set()
+    
+    for me in range(10):
+        num = int(input(f"Enter number {me + 1}: "))
+        if num not in list:
+            list.add(num)
+            numbers.append(num)
+    
+    print("\nAll numbers (first entry only for duplicates):")
+    print(numbers)
+
+if __name__ == "__main__":
+    main()
