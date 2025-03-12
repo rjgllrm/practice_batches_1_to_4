@@ -1,0 +1,1 @@
+print("Numbers from 0 to 100 except those ending in zero:", *[me for me in range(101) if me % 10 != 0])
