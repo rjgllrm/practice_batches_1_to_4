@@ -1,1 +1,17 @@
+def main():
 
+    numbers = []
+    
+    while True:
+        try:
+            num = int(input("Enter a number (or space to stop): "))
+            numbers.append(num)
+        except ValueError:
+            break
+    
+    if numbers:
+        most_common = max(numbers, key=numbers.count)
+        print(f"\nNumber with most duplicates:number1 {most_common} (Count: {numbers.count(most_common)})")
+
+if __name__ == "__main__":
+    main()
