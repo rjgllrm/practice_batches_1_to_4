@@ -1,0 +1,5 @@
+me = 1  
+while me <= 100:
+    print(me, end=" ")
+    me += 2
+print()  
