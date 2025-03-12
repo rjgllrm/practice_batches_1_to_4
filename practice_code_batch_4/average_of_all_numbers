@@ -1,0 +1,17 @@
+def main():
+    numbers = []
+    
+    while True:
+        try:
+            num = float(input("Enter a number (or space to stop): "))
+            numbers.append(num)
+            average = sum(numbers) / len(numbers)
+        except ValueError:
+            break
+    
+    if numbers:
+        final_average = sum(numbers) / len(numbers)
+        print(f"\nFinal average: {final_average:.2f}")
+
+if __name__ == "__main__":
+    main()
