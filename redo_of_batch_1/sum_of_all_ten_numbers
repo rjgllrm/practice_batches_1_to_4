@@ -1,0 +1,7 @@
+numbers = []  
+
+for me in range(10):
+    num = int(input(f"Enter number {me + 1}: ")) 
+    numbers.append(num)  
+
+print("Sum of all numbers:", sum(numbers))  
