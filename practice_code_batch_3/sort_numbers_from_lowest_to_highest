@@ -1,0 +1,16 @@
+def main():
+    numbers = []
+    
+    while True:
+        try:
+            num = int(input("Enter a number (or other character to stop): "))
+            numbers.append(num)
+        except ValueError:
+            print("\nStopping...")
+            break
+    
+    if numbers:
+        print("\nFinal sorted numbers:", sorted(numbers))
+
+if __name__ == "__main__":
+    main()
