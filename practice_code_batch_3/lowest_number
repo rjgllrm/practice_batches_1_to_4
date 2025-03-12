@@ -3,7 +3,7 @@ def main():
     
     while True:
         try:
-            num = int(input("Enter a number (or other character to stop): "))
+            num = int(input("Enter a number (or space to stop): "))
             numbers.append(num)
         except ValueError:
             print("\nStopping...")
