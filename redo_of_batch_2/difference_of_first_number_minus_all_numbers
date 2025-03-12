@@ -1,0 +1,8 @@
+numbers = [] 
+for me in range(10):
+    num = float(input(f"Enter number {me + 1}: ")) 
+    numbers.append(num) 
+
+result = numbers[0] - sum(numbers[1:])
+
+print("Result:", result)
