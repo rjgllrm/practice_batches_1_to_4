@@ -1,0 +1,8 @@
+def main():
+    numbers = [int(input(f"Enter number {me + 1}: ")) for me in range(10)]
+    duplicates = {num for num in numbers if numbers.count(num) > 1}
+    
+    print("\nNumbers with duplicates:", sorted(duplicates))
+
+if __name__ == "__main__":
+    main()
