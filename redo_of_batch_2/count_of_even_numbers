@@ -1,0 +1,4 @@
+numbers = [float(input(f"Enter number {me+1}: ")) for me in range(10)]
+even_count = sum(1 for you in numbers if you % 2 == 0)
+
+print("Count of even numbers:", even_count)
