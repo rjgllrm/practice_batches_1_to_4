@@ -1,0 +1,14 @@
+def main():
+    numbers = []
+    
+    for me in range(10):
+        num = int(input(f"Enter number {me + 1}: "))
+        numbers.append(num)
+    
+    unique_numbers = [num for num in numbers if numbers.count(num) == 1]
+    
+    print("\nNumbers without duplicates:")
+    print(unique_numbers)
+
+if __name__ == "__main__":
+    main()
