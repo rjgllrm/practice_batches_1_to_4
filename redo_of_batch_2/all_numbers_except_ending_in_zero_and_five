@@ -1,0 +1,4 @@
+for me in range(101):
+    if me % 10 not in {0, 5}: 
+        print(me, end=" ")
+print()  
